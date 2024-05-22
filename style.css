@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Clash Grotesk', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    background: white;
+    color: black;
+    border-color: black;
+}
+.fs-scrn{
+    width: 100%;
+    height: 837px;
+    background: url(photo/EA.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fadeOut{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, white);
+    transform: translate(0,-18px);
+}
+.fade-in{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, transparent, white);
+    transform: translate(0,0);
+    position: absolute;
+}
+.homebtn{
+    /* height: 28px; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+    font-size: 19px;
+    flex: 1;
+}
+.homebtn a{
+    color: black;
+    text-decoration: none;
+}
+.homebtn:hover a{
+    color: orange;
+}
+/* navigation bar style /////////////////////////////////////////////// */
+.navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 -3px 10px gray;
+    background: white;
+    z-index: 1001;
+}
+.menu-btn{
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 35px;
+    font-size: 19px;
+    color: black;
+}
+.menu-btn-pageNav{
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    font-size: 19px;
+    color: black;
+}
+.changeScroll-btn{
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+.chSc-btn-txtClose{
+    text-align: end;
+}
+.menu-btn:hover, .menu-btn-pageNav:hover{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+}
+.menu-btn:hover>.decorSect-rotate{
+    animation: decoSect-rotate .7s;
+}
+.decorSect-rotate{
+    margin-top: 1px;
+    width: 20px;
+    height: 20px;
+    border: solid black 2px;
+    border-radius: 7px;
+    transform: rotate(45deg);
+}
+.navbar img{
+    width: 9.6px;
+    transform: translate(4.8px,-2.8px) rotate(45deg);
+    visibility: hidden;
+    filter: invert(100%);
+}
+/* navigation bar style end /////////////////////////////////////////// */
+/* menu style ///////////////////////////////////////////////////////// */
+.menu{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    transform: translate(0,50px);
+    z-index: 1000;
+}
+.changeScroll-sect-pageNav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+    transform: translate(0,-70px);
+    box-shadow: 0 -5px 10px gray;
+    transition: 1s;
+}
+.changeScroll-sect{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+    transform: translate(0,-140px);
+    box-shadow: 0 -5px 10px gray;
+    transition: 1s;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+.UserCH{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.UserCH a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.UserCH:hover>a{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+}
+.L{
+    margin-right: 98px;
+}
+.DD{
+    width: .15%;
+    height: 22px;
+    background: black;
+}
+.DD1{
+    width: .1%;
+    height: 22px;
+    background: black;
+}
+/* menu style end ///////////////////////////////////////////////////// */
+.title-bothPart{
+    width: auto;
+    height: 200px;
+    font-size: 130px;
+    color: white;
+    opacity: 1;
+    /* filter: blur(10px); */
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.title-changeScroll-sect{
+    width: fit-content;
+    height: 100%;
+    margin-left: 50px;
+    animation: appearTitle 1.5s ease;
+    animation-fill-mode: both;
+}
+/* second screen ///////////////////////////////////////////////////// */
+.snd-scrn-cont{
+    height: 837px;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+.subtitle-cont{
+    width: 180px;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    overflow: hidden;
+    z-index: 999;
+}
+.snd-screen-contentSub{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contentSub-btns{
+    width: 100%;
+    height: 150px;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.filler-btn{
+    margin-right: 20px;
+}
+.filler-btn a{
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+}
+.filler-btn:hover>a{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+}
+.contentSub-filler{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.filler-1, .filler-2{
+    width: 40%;
+    height: 80%;
+    overflow: hidden;
+}
+.filler-1 p, .filler-2 p{
+    font-family: 'poppins';
+    text-align: justify;
+}
+.filler-helper{
+    height: 550px;
+    line-height: 1.7;
+}
+/* another second screen style //////////////////////////////////////// */
+.snd-scrn-contExplored{
+    height: fit-content;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.justifT{
+    padding-top: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 100px;
+}
+.justifT p{
+    font-family: 'poppins';
+    line-height: 1.7;
+    text-align: justify;
+}
+.justifTS{
+    display: flex;
+    flex-direction: row;
+}
+.justifTS-pt{
+    max-width: 50%;
+}
+.justifTS-pt p{
+    font-family: 'poppins';
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 100px;
+}
+/* third screen style ///////////////////////////////////////////////// */
+.trd-scrn-cont{
+    max-height: 200px;
+    padding-top: 100px;
+}
+.comments p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: gray;
+    /* padding-top: 1%; */
+    padding-bottom: 1%;
+}
+.comments a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.comments a:hover{
+    color: blue;
+}

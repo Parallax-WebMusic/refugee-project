@@ -1,0 +1,54 @@
+@keyframes decoSect-rotate{
+    from{transform: rotate(45deg);}
+    to{transform: rotate(225deg) translate(1px,.5px);}
+}
+/* title animations ///////////////////////////////////////////////////////*/
+@keyframes appearTitleSH{
+    from{transform: translate(0,200px);}
+    to{transform: translate(0,0);}
+}
+@keyframes appearTitle{
+    from{transform: translate(0,200px);}
+    to{transform: translate(0,0);}
+}
+/* nav bar's animations ////////////////////////////////////////////////////*/
+@keyframes scrollSectBtn{
+    from{transform: translate(0,0);}
+    to{transform: translate(0,-24px);}
+}
+@keyframes scrollSectBtn-reverse{
+    from{transform: translate(0,-24px);}
+    to{transform: translate(0,0);}
+}
+@keyframes decoSect-rotate-1{
+    from{transform: rotate(225deg) translate(1px,.5px);}
+    to{transform: rotate(45deg);}
+}
+@keyframes decoSect-rotate-2{
+    from{transform: rotate(45deg);}
+    to{transform: rotate(225deg) translate(1px,.5px);}
+}
+/* menu animation /////////////////////////////////////////////////////////*/
+@keyframes menuContOpen{
+    from{transform: translate(0,-105px);}
+    to{transform: translate(0,-42px);}
+}
+@keyframes menuContClose{
+    from{transform: translate(0,-42px);}
+    to{transform: translate(0,-105px);}
+}
+@keyframes menuContOut{
+    to{transform: translate(0,-105px);}
+}
+@keyframes pageNavOpen{
+    from{transform: translate(0,-55px);}
+    to{transform: translate(0,0);}
+}
+@keyframes pageNavClose{
+    from{transform: translate(0,0);}
+    to{transform: translate(0,-55px);}
+}
+@keyframes pageNavOut{
+    to{transform: translate(0,-55px);}
+}
+/* ////////////////////////////////////////////////////////////////////////*/
